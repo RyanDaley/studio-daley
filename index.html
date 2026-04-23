@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Daley</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <div id="intro">
+    <div id="line-top-wrap">
+      <svg id="line-top" height="1" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="0.5" x2="100%" y2="0.5" stroke="#000" stroke-width="1"/>
+      </svg>
+    </div>
+    <div id="text-studio">Studio</div>
+    <div id="text-daley">Daley</div>
+    <div id="line-bottom-wrap">
+      <svg id="line-bottom" height="2" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="1" x2="100%" y2="1" stroke="#000" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Content Block 1: Left-aligned, frames 25–35 -->
+  <div id="content-block-1" class="content-block block-left">
+    <h2>Grow your Digital Presence</h2>
+    <svg class="block-line" height="1" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="0.5" x2="100%" y2="0.5" stroke="#000" stroke-width="1"/>
+    </svg>
+    <p>We design eye catching websites and digital tools to help your business grow into its full potential.</p>
+  </div>
+
+  <!-- Content Block 2: Right-aligned, frames 75–85 -->
+  <div id="content-block-2" class="content-block block-right">
+    <h2>AI Integrations</h2>
+    <svg class="block-line" height="1" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="0.5" x2="100%" y2="0.5" stroke="#000" stroke-width="1"/>
+    </svg>
+    <p>Automate the manual and focus on the meaningful. We develop custom AI agents designed to inhabit your business ecosystem, streamlining your internal operations and cultivating a more efficient, self-sustaining digital environment.</p>
+  </div>
+
+  <!-- Content Block 3: Left-aligned, frames 135–145 -->
+  <div id="content-block-3" class="content-block block-left">
+    <h2>Brand Identity &amp; Marketing</h2>
+    <svg class="block-line" height="1" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="0.5" x2="100%" y2="0.5" stroke="#000" stroke-width="1"/>
+    </svg>
+    <p>We translate your business values into a visual and verbal identity that commands attention. By aligning your brand&#39;s &#39;why&#39; with smart, strategic marketing, we help you branch out to your ideal audience and create a powerful, sustainable impact.</p>
+  </div>
+
+  <!-- Form Block: Left-aligned, frames 190–200 (stays) -->
+  <div id="form-block" class="content-block block-left">
+    <h2>Work with Us</h2>
+    <svg class="block-line" height="1" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="0.5" x2="100%" y2="0.5" stroke="#000" stroke-width="1"/>
+    </svg>
+    <p class="form-subtitle">We will take you to the next level.</p>
+    <form id="contact-form" autocomplete="off">
+      <input type="hidden" name="_subject" value="new custom" />
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email address" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="form-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
